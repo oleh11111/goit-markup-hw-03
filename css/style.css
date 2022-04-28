@@ -25,8 +25,14 @@ body{
    
 }
 
-    ul{ list-style: none;}
-
+    ul{ list-style: none;
+    margin: 0px;
+    padding: 0px;
+    }
+    p, h1, h2, h3, h4, h5 h6, a{
+        margin: 0px;
+        padding: 0px;
+    }
     .container{
         margin-left: auto;
         margin-right: auto;
@@ -42,11 +48,11 @@ body{
 
     .header{
         display: flex;
-        margin-bottom: 94px;
+       
     }
 
     .header-portpholio .logo{
-     margin-right: 93px;   
+      
     color: var(--logo-color);
     text-decoration: none;
     font-family: 'Raleway';
@@ -128,12 +134,20 @@ body{
     color: var(--accent-color);
 }
 
+.hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-color: #2F303A;
+    width: 1600px;
+}
+
 .hero-title{
     margin-top: 0px;
     margin-bottom: 30px;
+   
+
     color: var(--ccolor-withe);
-    /* времено фон */
-    background-color: #2F303A;
+
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -144,11 +158,10 @@ body{
 
 .button{
     margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 94px;
+    margin-right: auto; 
     padding: 10px 32px;
     border-radius: 4px;
-    border: 1px solid transparent;
+    border: 1px solid ;
     
 
     color: var(--ccolor-withe);
@@ -156,11 +169,15 @@ body{
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
-    line-height: 1,88;
+    line-height: 1.88;
     display: flex;
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
+}
+
+.peculiarties{
+    padding: 94px 0px;
 }
 
 .title-peculiarties{
@@ -181,7 +198,7 @@ body{
     margin-bottom: 10px;
 }
 
-.peculiarties{
+.peculiarties-list{
     display:block;
     display: flex;
     padding-left: 0px;
@@ -211,6 +228,10 @@ body{
     margin-right: 0px;
 }
 
+.work-examples{
+    padding-bottom: 94px;
+}
+
 .work-title{
     margin-top: 0px;
     margin-bottom: 50px;
@@ -226,7 +247,6 @@ body{
     display: block;
     display: flex;
     margin-top: 0px;
-    margin-bottom: 94px;
     padding: 0px 0px;
 }
 
@@ -248,29 +268,40 @@ body{
 .comand-title{
     margin-top: 0px;
     margin-bottom: 50px;
-
-    color: var(--secondary-text-color);
     font-weight: 700;
     font-size: 36px;
-    line-height: 1.67;
+    line-height: 1.16;
     text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-color);
+}
+
+.comand{
+    padding: 94px 0px;
 }
 
 .comand-list{
     display: block;
     display: flex;
     padding: 0px 0px 0px 0px;
-    margin-bottom: 94px;
     
+    
+}
+
+.comand-list .item .title{
+    color: var(--secondary-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.17;   
+    text-align: center;
+    letter-spacing: 0.03em;
 }
 
 .comand-img{
     display: block;
-    width: 270px;
-    margin-bottom: 30px;
-   
-      
+    width: 270px;  
 }
+
 .comand-list .item{
     margin-right: 30px;
 }
@@ -281,29 +312,25 @@ body{
 
 
 .comand-list .title{
-    margin-top: 0px;
-    margin-bottom: 10px;
+   padding-top: 30px;
+   padding-bottom: 10px;
 }
 
 .comand-list .text{
     margin-top: 0px;
     margin-bottom: 0px;
+    text-align: center;
 }
 
-.title{
-    color: var(--secondary-text-color);
-    font-weight: 700;
-    font-size: 14px;: 0px;
-    line-height: 1.4;
-    text-transform: uppercase;
-}
+
 
 .comand{
     background-color: #F5F4FA;
 }
 
-.footer{
+.footer .container{
     background-color: #2F303A;
+    padding: 60px 0px;
 }
 
 .footer .logo{ 
@@ -365,12 +392,16 @@ body{
     overflow: hidden;
 }
 
+.portpholio{
+    padding: 94px 0px;
+}
+
 .project{
     display: block;
     display: flex;
     margin-top: 0px;
-    margin-bottom: 50px;
     padding-left: 0px;
+    margin-bottom: 50px;
     justify-content: center;
 }
 
@@ -403,36 +434,40 @@ body{
     background-color: var(--accent-color);
 }
 
-.portpholio{
+.portpholio-list{
  
     display: flex;
     flex-wrap: wrap;
     margin-top: 0px;
-    margin-bottom: 94px;
     padding-left: 0px;
     
 
 }
 .portpholio-img{
     display: block;
-    margin-bottom: 20px;
+    
 }
-.portpholio .title-item{
-    margin-top: 0px;
-    margin-bottom: 4px;
-    margin-left: 24px;
+.img-bottom{
+    border: 1px solid rgba(238, 238, 238, 1);
 }
 
-.portpholio .item{ 
+.portpholio .title-item{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 20px;
+    padding-bottom: 4px;
+    padding-left: 24px;
+}
+
+.portpholio-list .item{ 
     margin-bottom: 30px; 
     margin-right: 30px;   
-    border: 1px  solid rgba(238, 238, 238, 1); 
     width: 370;
     width: calc(100%-60px)/3;
 
 }
 
-.portpholio .item:nth-child(3n){
+.portpholio-list .item:nth-child(3n){
     margin-right: 0px;
 } 
 
@@ -443,7 +478,7 @@ body{
 .portpholio .text{
     margin-top: 0px;
     margin-bottom: 0px;
-    margin-left: 24px;
+    padding-left: 24px;
 }
     
 .title-item{
