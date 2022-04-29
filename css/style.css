@@ -43,15 +43,19 @@ body{
 
     .header-portpholio{
         display: flex;
-        margin-bottom: 94px;
+        
     }
 
     .header{
         display: flex;
+        border-bottom: 1px solid rgba(236, 236, 236, 1)        ;
        
     }
 
-    .header-portpholio .logo{
+    .header- .logo{
+    margin-right: 93px;
+    padding-top: 24px;
+    padding-bottom: 25px;
       
     color: var(--logo-color);
     text-decoration: none;
@@ -62,7 +66,10 @@ body{
 }
 
 .header .logo{
-    margin-right: 93px;   
+    margin-right: 93px;  
+    padding-top: 24px;
+    padding-bottom: 25px;
+    
    color: var(--logo-color);
    text-decoration: none;
    font-family: 'Raleway';
@@ -139,6 +146,8 @@ body{
     padding-bottom: 200px;
     background-color: #2F303A;
     width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .hero-title{
@@ -196,16 +205,20 @@ body{
 .peculiarties .title{
     margin-top: 0px;
     margin-bottom: 10px;
+
+    color: #212121;;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
 }
 
 .peculiarties-list{
     display:block;
     display: flex;
     padding-left: 0px;
-    margin-top: 0px;
-    margin-bottom: 94px;
-   
-    
+    margin-top: 0px; 
 }
 
 
@@ -239,7 +252,7 @@ body{
     color: var(--secondary-text-color);
     font-weight: 700;
     font-size: 36px;
-    line-height: 1.67;
+    line-height: 1.16;
     text-align: center;
 }
 
@@ -313,12 +326,13 @@ body{
 
 .comand-list .title{
    padding-top: 30px;
-   padding-bottom: 10px;
+  
 }
 
 .comand-list .text{
     margin-top: 0px;
     margin-bottom: 0px;
+    padding-top: 10px;
     text-align: center;
 }
 
@@ -328,7 +342,7 @@ body{
     background-color: #F5F4FA;
 }
 
-.footer .container{
+.footer{
     background-color: #2F303A;
     padding: 60px 0px;
 }
@@ -401,7 +415,7 @@ body{
     display: flex;
     margin-top: 0px;
     padding-left: 0px;
-    margin-bottom: 50px;
+    padding-bottom: 50px;
     justify-content: center;
 }
 
